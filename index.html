@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="score"><span id="score-number">♥♥♥♥♥♥♥♥♥♥</span></div>
+    <div>
+      Pitch: <span id="pitch">0</span> Hz Clarity:
+      <span id="clarity">0</span> Volume: <span id="volume">0</span>
+    </div>
+
+    <div>
+      <button id="init-pitch">Set pitch range</button>
+      current:
+      <span id="min-pitch">0</span> Hz to <span id="max-pitch">0</span> Hz
+    </div>
+
+    <div>
+      <button id="start-game" disabled>Start game</button>
+    </div>
+
+    <div id="app">
+      <div id="bat"></div>
+      <div id="gun"></div>
+    </div>
+    <script type="module" src="/src/main.ts" defer></script>
+  </body>
+</html>
